@@ -1,116 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<title>My Portfolio</title>
+	<div id="track"></div>
+	<script>
+		$("#track").load("gtrack.html");
+	</script>
+	<title>My Portfolio - Art</title>
 	<meta charset="utf-8">
 	<meta name="viewport"  content="width=device-width", intial-scale=1>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="main.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-	<!--TODO: put navbar in hamburger button-->
-	<nav class="navbar navbar-fixed-top navbar-expand-md">
-	<img class="navbar-brand" src="images/logo.png" width="30" height="40" alt="">
-	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="main-navigation">
-	    <ul class="navbar-nav">
-	      <li class="nav-item">
-	        <a class="nav-link" href="index.html">Home</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="projects.html">Projects</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="art.html">Art</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="resume/tariq_kariapper-resume.pdf" target="blank">Resume</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>	
-
+	<div id="header"></div>
+	<script>
+		$("#header").load("header.html");
+	</script>
 	<header class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="container features">
 		 	<div class="row">
 		    <div class="container">
 			    <div class="row">
-			    	<div class="col-sm-4">
-			        	<div class="card" style="width: 18rem;">
-					 		<img class="card-img-top" src="images/logo_banner	.png" alt="Card image cap">
-					  		<div class="card-body">
-					    		<h4 class="card-text">Personal Logo</h4>
-					    		<p class="card-text">A simple logo I made in 2018 by combining my initals. I made over 100 sketches and turned 10 of them into prototype designs before finally settling on and refining my current logo.</p>
-			  				</div>
-						</div>
-					</div>
-			        <div class="col-sm-4">
-			        	<div class="card" style="width: 18rem;">
-					 		<img class="card-img-top" src="images/scioly.png" alt="Card image cap">
-					  		<div class="card-body">
-					    		<h4 class="card-text">Science Olympiad Shirt</h4>
-					    		<p class="card-text">A t-shirt design I made for my high school Science Olympiad team in 2019.</p>
-			  				</div>
-						</div>
-					</div>
-		        	<div class="col-sm-4">
-		        	<div class="col-sm-4">
-			        	<div class="card" style="width: 18rem;">
-					 		<img class="card-img-top" src="images/construction.jpg" alt="Card image cap">
-					  		<div class="card-body">
-					    		<h4 class="card-text">More art will be uploaded shortly!</h4>
-			  				</div>
-						</div>
-					</div>
-					<!--</div>
-		        	<div class="col-sm-4">
-		        		<div class="col-sm-4">
-			        		<div class="card" style="width: 18rem;">
-					 			<img class="card-img-top" src="" alt="Card image cap">
-					  			<div class="card-body">
-					    			<h4 class="card-text">heim fun run</h4>
-					    			<a href="#" class="btn btn-primary">Source code</a>
-				  				</div>
+						<div class="card-columns">
+						  <div class="card">
+						    <img src="images/logo_banner.png" class="card-img-top" alt="">
+						    <div class="card-body">
+						      <h4 class="card-title">Personal Logo</h4>
+						      <p class="card-text">A simple logo I made by combining my initals. I made over 100 sketches and turned 10 of them into prototype designs before finally settling on and refining my current logo.</p>
+									<p class="card-text"><small class="text-muted">July 2018</small></p>
+						    </div>
+						  </div>
+							<div class="card">
+						    <img src="images/scioly.png" class="card-img-top" alt="">
+						    <div class="card-body">
+						      <h4 class="card-title">Science Olympiad Shirt</h4>
+						      <p class="card-text">A t-shirt design I made for my high school Science Olympiad team.</p>
+									<p class="card-text"><small class="text-muted">November 2018</small></p>
+						    </div>
+						  </div>
+							<div class="card">
+								<img src="images/logo_banner.png" class="card-img-top" alt="">
+								<div class="card-body">
+									<h4 class="card-title">TSA Shirt</h4>
+									<p class="card-text">A t-shirt design I made for my high school Technology Student Assiocation.</p>
+									<p class="card-text"><small class="text-muted">October 2015</small></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="images/lowpolym.png" class="card-img-top" alt="">
+								<div class="card-body">
+									<h4 class="card-title">Low Poly Mountain</h4>
+									<p class="card-text">A simple art style using a low amount of polygons for a unique look. Made using Blender.</p>
+									<p class="card-text"><small class="text-muted">April 2018</small></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="images/pencil.png" class="card-img-top" alt="">
+								<div class="card-body">
+									<h4 class="card-title">Pencil</h4>
+									<p class="card-text">A mechanical pencil I modeled and rendered using Blender. I used materials and lighting to make the object appear more realistic.</p>
+									<p class="card-text"><small class="text-muted">May 2018</small></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="images/rand_logo.png" class="card-img-top" alt="">
+								<div class="card-body">
+									<h4 class="card-title">Logo</h4>
+									<p class="card-text">An abstract logo I made by tracing out one of my doodles in Blender.</p>
+									<p class="card-text"><small class="text-muted">September 2015</small></p>
+								</div>
 							</div>
 						</div>
-			       	</div>-->
-		    </div>
-			    <!--<div class="row">
-			        <div class="col-sm-4"><p>sample text</p></div>
-			        <div class="col-sm-4"><p>sample text</p></div>
-			        <div class="col-sm-4"><p>sample text</p></div>
-			    </div>-->
-			</div>  
-		</div> 
-		</div>
-	</header>
-
-	
-
- 	<footer class="page-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-8 col-sm-12">
-					<h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-					<p>sample text</p>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12">
-					<h6 class="text-uppercase font-weight-bold">Contact</h6>
-					<p>tariapper(at)outlook.com</p>
 				</div>
 			</div>
-		</div>
-		<div class="footer-copyright text-center">© 2019 Copyright: Tariq Kariapper</div>
-	</footer>
+	</header>
+
+
+
+ 	<!--<footer class="page-footer">
+		<div id="footer"></div>
+		<script>
+			$("#footer").load("footer.html");
+		</script>
+	</footer>-->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
