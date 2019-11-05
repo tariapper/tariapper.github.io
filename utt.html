@@ -3,17 +3,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<title>My Portfolio</title>
+	<div id="track"></div>
+	<script>
+		$("#track").load("gtrack.html");
+	</script>
+	<title>Ultimate Tic Tac Toe</title>
 	<meta charset="utf-8">
 	<meta name="viewport"  content="width=device-width", intial-scale=1>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="main.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-	<!--TODO: put navbar in hamburger button-->
 	<nav class="navbar navbar-expand-md">
 	  <img class="navbar-brand" src="images/logo.png" width="30" height="40" alt="">
 	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -64,4 +66,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="main.js"></script>
 </body>
+<footer>
+	<div id="footer"></div>
+		<script>
+			$("#footer").load("footer.html");
+		</script>
+	</footer>
 </html>
