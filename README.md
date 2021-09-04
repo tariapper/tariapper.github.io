@@ -1,0 +1,1 @@
+A simple website for displaying my projects. Created using [bulma](https://github.com/jgthms/bulma) and customized using [Sass.](https://github.com/sass) Palette inspiration [here.](https://www.awwwards.com/sites/we-are-bert)
